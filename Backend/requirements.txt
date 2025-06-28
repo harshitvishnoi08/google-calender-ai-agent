@@ -12,3 +12,5 @@ dotenv
 langchain-groq
 pytz
 oauth2client
+pydantic
+typing-extensions
