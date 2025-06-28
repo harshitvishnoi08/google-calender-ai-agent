@@ -19,6 +19,7 @@ from langchain_core.tools import tool
 import os
 from dotenv import load_dotenv
 from langgraph.graph import END, START
+import json
 
 app = FastAPI()
 
@@ -43,7 +44,10 @@ SCOPES = ['https://www.googleapis.com/auth/calendar']
 
 def get_calendar_service():
     """Authenticate and return the Google Calendar service instance."""
-    credentials = ServiceAccountCredentials.from_json_keyfile_name('service_account.json', SCOPES)
+    google_creds = json.loads(os.environ["GOOGLE_CREDENTIALS_JSON"])
+    credentials = ServiceAccountCredentials.from_json_keyfile_dict(
+    google_creds,
+    SCOPES)
     return build('calendar', 'v3', credentials=credentials)
 
 calendar_service = get_calendar_service()
