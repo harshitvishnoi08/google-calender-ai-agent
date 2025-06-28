@@ -5,7 +5,7 @@ from typing import List, Dict
 import pytz
 
 # Configure the backend URL
-BACKEND_URL = "http://localhost:8000"  # Update if your backend is hosted elsewhere
+BACKEND_URL = "https://google-calender-ai-agent.onrender.com"  # Update if your backend is hosted elsewhere
 
 # Timezone setup
 IST = pytz.timezone('Asia/Kolkata')
