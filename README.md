@@ -24,6 +24,10 @@ The application is deployed and accessible via:
 - **Frontend URL**: [Streamlit app](https://calender-ai-agent-vishnoi-harshi.streamlit.app/)
 - **Backend URL**: [FastAPI Backend](https://google-calender-ai-agent.onrender.com)
 
+## Demo Video
+Watch the demo video to see the application in action:
+[Demo Video](https://www.youtube.com/watch?v=0hvVq1yga_w)
+
 ## Prerequisites
 - Python 3.8+
 - Service Account JSON file for Google Calendar API.
@@ -63,3 +67,4 @@ The application is deployed and accessible via:
 
 ## Notes
 This application is currently configured to interact with a single Google Calendar (developer-specific). In future iterations, it will scale to support multiple users and calendars dynamically.
+
