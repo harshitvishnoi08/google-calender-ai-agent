@@ -11,3 +11,4 @@ langsmith
 dotenv
 langchain-groq
 pytz
+oauth2client
