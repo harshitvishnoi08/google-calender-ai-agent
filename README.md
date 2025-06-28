@@ -21,8 +21,8 @@ Google Calendar Assistant is a streamlined application that leverages LangChain'
 
 ## Deployment
 The application is deployed and accessible via:
-- **Frontend URL**: [Streamlit App](https://example.com) *(Replace with your deployed link)*
-- **Backend URL**: [FastAPI Backend](https://example.com) *(Replace with your deployed link)*
+- **Frontend URL**: [Streamlit app](https://calender-ai-agent-vishnoi-harshi.streamlit.app/)
+- **Backend URL**: [FastAPI Backend](https://google-calender-ai-agent.onrender.com)
 
 ## Prerequisites
 - Python 3.8+
