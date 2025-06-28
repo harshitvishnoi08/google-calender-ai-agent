@@ -44,12 +44,8 @@ SCOPES = ['https://www.googleapis.com/auth/calendar']
 
 def get_calendar_service():
     """Authenticate and return the Google Calendar service instance."""
-    google_creds = json.loads(os.environ["GOOGLE_CREDENTIALS_JSON"])
-    credentials = ServiceAccountCredentials.from_json_keyfile_dict(
-    google_creds,
-    SCOPES)
+    credentials = ServiceAccountCredentials.from_json_keyfile_name('/etc/secrets/service_account.json', SCOPES)
     return build('calendar', 'v3', credentials=credentials)
-
 calendar_service = get_calendar_service()
 
 # Define tools (same as in your original script)
