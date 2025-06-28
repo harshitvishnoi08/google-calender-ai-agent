@@ -1,0 +1,13 @@
+fastapi 
+uvicorn
+langgraph
+google-api-python-client
+google-auth 
+google_auth_oauthlib
+gspread
+langchain-core
+langchain 
+langsmith
+dotenv
+langchain-groq
+pytz
